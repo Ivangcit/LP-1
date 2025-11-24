@@ -1,40 +1,32 @@
-const arrNumeros=[];
-arrNumeros.unshift(5);
-arrNumeros.unshift(5);
-arrNumeros.unshift(5);
-console.log(arrNumeros[1]);
+const num1 = parseInt(prompt("Numero 1:"));
+const num2 = parseInt(prompt("Numero 2:"));
+const num3 = parseInt(prompt("Numero 3:"));
 
 
+const arrNumeros = [num1, num2, num3];
 
-function ordenar(arrNumeros){
-    let mayor=0;
-    let medio=0;
-    let menor=arrNumeros[0];
+if (num1 === num2 && num2 === num3) {
+        
+        console.log("Los tres números son iguale");
+        
+    }
 
-    if(arrNumeros[1]==arrNumeros[2]&&arrNumeros[2]==arrNumeros[3]){
-    console.log("Los numeros son iguales")
-}
-    
-    for(let i=0;i<3;i++){
-        if(arrNumeros[i]>mayor){
-            mayor=arrNumeros[i];
-        }
-    };
+function ordenar(arrNumeros) {
+   
 
-    for(let i=0;i<3;i++){
-        if(arrNumeros[i]<menor){
-            mayor=arrNumeros[i];
-        }
-    };
+   
 
-    for(let i=0;i<3;i++){
-        if(arrNumeros[i]!=mayor&&arrNumeros[i]!=menor){
-            medio=arrNumeros[i];
-        }
-    };
+    const a = arrNumeros[0];
+    const b = arrNumeros[1];
+    const c = arrNumeros[2];
 
-    console.log(mayor,medio,menor);
-    console.log(menor,medio,mayor);
+    let mayor = Math.max(a, b, c);
+    let menor = Math.min(a, b, c); 
+    let medio = a + b + c - mayor - menor;
+
+
+    console.log(mayor, medio, menor);
+    console.log(menor, medio, mayor);1
 
 }
 ordenar(arrNumeros);
