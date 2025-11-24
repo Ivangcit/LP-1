@@ -7,7 +7,7 @@ const arrNumeros = [num1, num2, num3];
 
 if (num1 === num2 && num2 === num3) {
         
-        console.log("Los tres números son iguale");
+        console.log("Los tres numeros son iguales");
         
     }
 
@@ -26,7 +26,7 @@ function ordenar(arrNumeros) {
 
 
     console.log(mayor, medio, menor);
-    console.log(menor, medio, mayor);1
+    console.log(menor, medio, mayor);
 
 }
 ordenar(arrNumeros);
